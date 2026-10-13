@@ -6,7 +6,7 @@ namespace ShoeShop
     public partial class Form1 : Form
     {
         DataTable dt;
-        string connStr = "Server=localhost;Port=5432;Database=postgres;User Id=postgres;Password=1234";
+        string connStr = "Server=localhost;Port=5432;Database=shoes;User Id=postgres;Password=32351616aa";
 
         public Form1(string role)
         {
