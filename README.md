@@ -1,0 +1,9 @@
+# ShoeShop — WinForms + PostgreSQL (ДЭ 09.02.07)
+
+Открыть `ShoeShop.sln` в Visual Studio 2022 (.NET 8). Пакет Npgsql подтянется автоматически при сборке.
+
+Перед запуском поправить строку подключения `connStr` в `ShoeShop/Login.cs` и `ShoeShop/Form1.cs`
+(имя БД и пароль postgres). Таблица `users` должна содержать столбцы `login`, `password`, `role`.
+
+Папка `FullVersion` — полная версия под все модули ДЭ (карточки товаров, поиск/фильтр/сортировка,
+формы добавления/редактирования, заказы). Открывается своим `FullVersion/ShoeShop.sln`.
