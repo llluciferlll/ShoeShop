@@ -11,7 +11,7 @@ namespace ShoeShop
         public OrderEditForm(DataRow row)
         {
             InitializeComponent();
-            Icon = new Icon("Icon.ico");
+            Icon = Icon.FromHandle(new Bitmap("Icon.png").GetHicon());
             this.row = row;
             orderId = row == null ? (int)Db.Query("select coalesce(max(id), 0) + 1 from orders").Rows[0][0] : (int)row["id"];
         }

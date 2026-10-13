@@ -5,7 +5,7 @@ namespace ShoeShop
         public LoginForm()
         {
             InitializeComponent();
-            Icon = new Icon("Icon.ico");
+            Icon = Icon.FromHandle(new Bitmap("Icon.png").GetHicon());
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

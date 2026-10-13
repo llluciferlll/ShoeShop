@@ -9,7 +9,7 @@ namespace ShoeShop
         public OrdersForm()
         {
             InitializeComponent();
-            Icon = new Icon("Icon.ico");
+            Icon = Icon.FromHandle(new Bitmap("Icon.png").GetHicon());
             lblUser.Text = Program.FullName;
             btnAdd.Visible = isAdmin;
             LoadOrders();

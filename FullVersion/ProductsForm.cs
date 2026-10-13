@@ -10,7 +10,7 @@ namespace ShoeShop
         public ProductsForm()
         {
             InitializeComponent();
-            Icon = new Icon("Icon.ico");
+            Icon = Icon.FromHandle(new Bitmap("Icon.png").GetHicon());
             lblUser.Text = Program.FullName;
             panelFilter.Visible = isAdmin || isManager;
             btnOrders.Visible = isAdmin || isManager;
